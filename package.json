@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "playwright test"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/js": "latest",
+    "@playwright/test": "^1.63.0",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-react-refresh": "latest",
     "globals": "latest",
+    "playwright": "^1.63.0",
     "prettier": "latest",
     "typescript": "latest",
     "typescript-eslint": "latest"
