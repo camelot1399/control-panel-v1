@@ -90,7 +90,18 @@ export default function App() {
               </div>
               <div>
                 <p className="label">Порт</p>
-                <p className="port">localhost:{active.port}</p>
+                <a
+                  href={`http://localhost:${active.port}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(event) => {
+                    event.preventDefault()
+                    window.open(`http://localhost:${active.port}`, '_blank')
+                  }}
+                  className="port"
+                >
+                  localhost:{active.port}
+                </a>
               </div>
             </div>
             <div className="actions">

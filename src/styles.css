@@ -123,7 +123,21 @@ nav {
   background: #34d399;
 }
 .port {
+  margin: 9px 0 0;
+  font-size: 18px;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+a.port {
   color: #d5d8e1;
+  text-decoration: none;
+}
+a.port:hover,
+a.port:focus-visible {
+  color: #fff;
+  text-decoration: underline;
 }
 .actions {
   display: flex;
