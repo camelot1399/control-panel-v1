@@ -1,0 +1,44 @@
+[
+  {
+    "id": "service-one",
+    "name": "Сервис 1",
+    "icon": "1",
+    "port": 5174,
+    "projectPath": "projects/service-one",
+    "commands": {
+      "start": {
+        "executable": "npm",
+        "args": ["run", "dev", "--", "--port", "5174"]
+      },
+      "stop": {
+        "executable": "process:terminate",
+        "args": []
+      },
+      "lint": {
+        "executable": "npm",
+        "args": ["run", "lint"]
+      }
+    }
+  },
+  {
+    "id": "service-two",
+    "name": "Сервис 2",
+    "icon": "2",
+    "port": 5175,
+    "projectPath": "projects/service-two",
+    "commands": {
+      "start": {
+        "executable": "npm",
+        "args": ["run", "dev", "--", "--port", "5175"]
+      },
+      "stop": {
+        "executable": "process:terminate",
+        "args": []
+      },
+      "lint": {
+        "executable": "npm",
+        "args": ["run", "lint"]
+      }
+    }
+  }
+]
